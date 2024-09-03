@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../LANDING PAGE/style.css">
+    <title>My Landing Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+
+    <header>
+        <a href="#" class="logo"><img src="./img/logo.png" alt="William"></a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#aboutme">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-text">
+            <h2>FRONT END DESIGNER</h2>
+            <h1 style="margin-top:5px; line-height: 60px;">William<br>Wenstein</h1>
+            <a href="#" class="btn">Contact Me!</a>
+        </div>
+        <div class="home-img">
+            <img src="../LANDING PAGE/img/saya.png" alt="">
+        </div>
+    </section>
+
+    <section class="aboutme" id="aboutme">
+        <div class="heading">
+            <h1>ABOUT ME</h1>
+        </div>
+
+        <div class="aboutme-contanier">
+            <div class="box">
+                <div class="box-img">
+                    <img src="./img/foto1.jpg" alt="Image Not Found">
+                </div>
+                
+                <h2>Hobby</h2>
+                <span style="font-size:15px;">GYM</span>
+            </div>
+
+            <div class="box">
+                <div class="box-img">
+                    <img src="./img/foto2.jpg" alt="Image Not Found">
+                </div>
+                
+                <h2>College Student</h2>
+                <span style="font-size:10px;">Tarumanagara University</span>
+            </div>
+
+            <div class="box">
+                <div class="box-img">
+                    <img src="./img/foto3.jpg" alt="Image Not Found">
+                </div>
+                
+                <h2>Organization</h2>
+                <span style="font-size:15px;">DPM</span>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="experience" id="experience">
+        <div class="experience-container">
+            <div class="experience-text">
+                <h2>My Experience</h2>
+                <p>
+                    I am a member of the student representative council of Tarumanagara University. That day was a legislation training day conducted by DPM FTI UNTAR at Camp David Resort, from July 12 to 14, 2024.
+                    </p>
+                <p>
+                    This legislation training is carried out to train leadership, learn how to become a leader, and form a character that is ready for the future. In addition, it also establishes good communication between commissions, not only commissions but also other people.
+                </p>
+            </div>
+            <div class="experience-img">
+                <img src="./img/experience.jpg" alt="My Experience">
+            </div>
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <div class="skills-img">
+            <img src="./img/skills.jpg" alt="">
+        </div>
+        <div class="skills-text">
+            <h2>My Skills</h2>
+            <p>From the junior high school class I have learned to design a website, the school has an information technology and telecommunications subject or what can be called ICT, where the lesson contains material on the basic way to create and design a website.
+            </p>
+            <p>I am always adapting to the latest trend changes in web design and technology, front-end experience is not only limited to technical skills, but also includes the ability to understand user needs and translate them into effective and elegant solutions.
+            </p>
+        </div>
+    </section>
+    
+    <section class="contact" id="contact">
+        <div class="social">
+            <a href="#"><i class='bx bxl-facebook'></i></a>
+            <a href="#"><i class='bx bxl-twitter'></i></a>
+            <a href="#"><i class='bx bxl-instagram'></i></a>
+            <a href="#"><i class='bx bxl-youtube'></i></a>
+        </div>
+        <div class="links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Use</a>
+            <a href="#">Contact</a>
+        </div>
+        <p> &#169; 2024 All Right Reserved </p>
+    </section>
+
+
+
+    <!-- Link of Custom JS  -->
+    <script src="./scripts.js">
+        let menu = document.querySelector('#menu-icon')
+        let navbar = document.querySelector('.navbar')
+
+
+        menu.addEventListener("click", ()=>{
+            menu.classList.toggle("bx-x");
+            navbar.classList.toggle("active")
+        })
+
+        window.onscroll=()=>{
+            menu.classList.remove("bx-x");
+            navbar.classList.remove("active")
+        }
+    </script>
+</body>
+</html>
